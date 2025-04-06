@@ -1,0 +1,248 @@
+/* Global Styles */
+
+/* Apply Helvetica Neue as the default font */
+body {
+  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+  font-size: 1.2em; /* Optional: Adjust base font size */
+  line-height: 1.6; /* Optional: Line spacing for readability */
+  /*color: #333;*/ /* Optional: Set text color */
+}.container {
+  max-width: 100%; /* Allow content to scale with the page width */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+/* Background image */
+/*body::before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*top: -10%;*/
+    /*left: 0;*/
+    /*width: 100%;  Covers the full width */
+    /*height: 500%;  Covers the full height */
+    /*background: url('/Users/sergiopicella/Desktop/website/assets/asecco.jpg') no-repeat center center; /* Image path */*/
+    /*background-size: cover;  Ensures the image scales to fit the viewport */
+    /*opacity: 0.1;  Controls the transparency of the image */
+    /*z-index: -1;  Places the image behind content */
+}
+
+
+/* Example of specific element styling */
+h1, h2, h3, p, pre, div, section {
+  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+  font-weight: bold; /* Adjust weight for headings */
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+/*Background color*/
+header {
+  background-color: #022F40;
+  color: white;
+  padding: 0rem 0;
+  text-align: center;
+}
+/*? color*/
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #38AECC;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #EF233C;
+}
+
+main {
+  padding: 1vw%;
+}
+
+footer {
+  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+  background-color: #2B2D42;
+  color: white;
+  text-align: center;
+  padding: 3vw% 100vw%;
+  position: relative;
+  bottom: 0;
+  width: 100vw%;
+  font-size: 1.25rem; /* Icon size */
+
+  }
+
+
+/* Photo Navigation Styles, vertical alignment */
+#photo-navigation {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+/* Photo Navigation Styles, horizontal alignment */
+.photo-links {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.photo-links a { /* Text not-hovering standard */
+  text-decoration: none;
+  color: #332;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.photo-links img { /* Shadow transition */
+  width: 40vw;
+  height: 30vw;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  transition: box-shadow .3s ease, transform .5s ease;
+}
+
+.photo-links a:hover img { /* Scaling when hovering on tile */
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo-links a:hover p { /* Color when hovering on tile */
+  color: #EF233C;
+}
+
+.photo-links p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+
+
+/* Add a background color to the #bio section */
+/* Parent container (#bio) */
+#bio {
+  background-color: #f0f2ff; /* Light blue background */
+  padding: 2vw; /* Add space inside the section */
+  margin: 0; /* Remove margins */
+  border-radius: 1vw; /* Optional: Rounds the corners */
+  color: #333; /* Adjust text color for better contrast */
+  width: 100vw;   /*Ensure the width is 100% of the parent container */
+  max-width: 100vw;  /*Limit the width to the viewport */
+  box-sizing: border-box; /* Include padding and borders in the element's total width */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out the text and image */
+  overflow: hidden; /* Prevent overflow outside the container */
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+  display: flex;  /*Enable flexbox */
+
+}
+
+/* Style the text container (text2) */
+#bio .text2 {
+  flex: 1; /* Allow the text to take up remaining space */
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+  margin-right: .5vw; /* Add spacing between text and image */
+  max-width: 110%; /* Ensure the text doesn't extend beyond the page */
+  width: 110%; /* Ensure the text container uses full available width */
+  overflow-wrap: break-word;  /*Ensure long words break onto the next line */
+  word-wrap: break-word;  /*Ensure word wrapping if needed */
+  hyphens: auto; /* Enable hyphenation for better wrapping */
+  box-sizing: border-box; /* Prevent padding from affecting overall width */
+}
+
+/* Style the image */
+#bio .image img {
+  max-width: 30%; /* Limit the image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 1vw; /* Optional: Round the image corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* Style for the Contact section */
+#contact {
+  text-align: center;
+  margin: 1vw 0;
+}
+
+/* Style the social links container */
+#contact .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1vw; /* Space between icons */
+  margin-top: 2vw;
+}
+.social-links i {
+  font-size: 5rem; /* Icon size */
+  color: #333; /* Default color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover i {
+  transform: scale(1.2);
+  color: #0077b5; /* Change to a hover color (e.g., LinkedIn blue) */
+}
+
+/*To not modify color after link has been visited*/
+a:link, a:visited {
+  color:  #007bff;; /* Or specify the desired color, e.g., black or blue */
+  text-decoration: none; /* Optional: Removes underline */
+}
+/*Add modifiers for mobile view*/
+@media screen and (max-width: 768px) {
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;    /* Center-align buttons */
+    gap: 1rem;              /* Add spacing between buttons */
+  }
+
+  .button {
+    width: 100%;            /* Make buttons full-width */
+    text-align: center;     /* Center-align text within buttons */
+  }
+}
+body {
+  overflow-x: hidden; 
+}
+div, img, p {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+/*@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}*/
