@@ -1,0 +1,619 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B65PS8QGN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B65PS8QGN7');
+</script>
+  <!-- Add keyword for search engine -->
+  <meta name="description" content="Davide Manca's personal website and academic CV">
+<meta name="keywords" content=" research, mathematics, logic, reverse mathematics, well quasi-order, better quasi-order, ordinal analysis">
+<meta name="author" content="Davide Manca">
+<!-- This for mobile friendly view -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Download Git, Linkedind and mail logo -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <title>Davide Manca</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+  <!-- Side by side rounded image for bio -->
+  <style>
+    .side-by-side {
+      display: flex; /* Align items side by side */
+      gap: 3vw; /* Add space between image and text */
+      align-items: center; /* Vertically align image and text */
+      justify-content: center;
+      text-align: center;
+
+    }
+
+    .side-by-side img {
+      width: 20vw; /* Set the size of the circular image */
+      height: 20vw; /* Make it a square */
+      border-radius: 100%; /* Make the image circular */
+      object-fit: cover; /* Ensures the image fills the circle nicely */
+      border: .3vw solid rgba(255, 246, 241); /* Optional: Add a border around the circle */
+      box-shadow: 2px 2px 2px rgba(253, 22, 2, 0.5);
+    }
+
+    .side-by-side2 {
+      display: flex; /* Align items side by side */
+      gap: 0vw; /* Add space between image and text */
+      align-items: center; /* Vertically align image and text */
+      justify-content: center;
+      text-align: center;
+
+    }	
+
+
+  </style>
+	
+
+
+<!--A Sergio of one's own -->
+
+<style>
+	.my_sergio{ 
+      		display: flex; /* Align items side by side */
+      		gap: 3vw; /* Add space between image and text */
+      		align-items: center; /* Vertically align image and text */
+      		justify-content: center;
+      		text-align: center;
+    		}      		
+
+	
+ 	.sergio-container {
+    				position: relative;
+    				width: 10vw;             /* Set image size */
+    				font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+ 			 }
+
+  .sergio-container img {
+    			width: 7vw; /* Set the size of the circular image */
+      			height: 7vw; /* Make it a square */
+      			border-radius: 100%; /* Make the image circular */
+      			object-fit: cover; /* Ensures the image fills the circle nicely */
+      			border: .1vw solid rgb(0, 0, 0); /* Optional: Add a border around the circle */
+    			}
+
+  .sergio-container:hover img {
+    transform: scale(1.20);   /* Scales up the image on hover */
+    filter: brightness(25%);  /* Apply shading effect */
+  }
+
+  .sergio-container .text {
+    position: absolute;
+    top: 50%;                 /* Center vertically */
+    left: 50%;                /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position relative to center */
+    color: white;
+    font-weight: bold;
+    font-size: calc(2.3vw);   /* Dynamically scale font size */
+    text-align: center;       /* Center-align text */
+    opacity: 0;               /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in effect */
+    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+    line-height: 1.3;         /* Adjust line height for better spacing */
+    padding: 0 1vw;           /* Add some padding to prevent text overflow */
+    word-wrap: break-word;    /* Prevent long text from breaking layout */
+  }
+
+  .sergio-container:hover .text {
+    opacity: 1;               /* Make the text appear on hover */
+    transform: translate(-50%, -48%); /* Add subtle vertical shift on hover for effect */
+  }
+		
+     
+</style>
+
+<!-- Fade in single text -->
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4vw);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated-text {
+    opacity: 0; /* Ensure the element starts hidden */
+  }
+
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+    animation-fill-mode: forwards; /* Retains the final state after animation */
+  }
+</style>
+
+
+<!-- boxino bio-->
+<style>
+
+#my_bio{
+
+background-color: rgba(0, 85, 254, 0.7);
+padding: 20px;
+border-radius:10px;
+color: rgba(255,248,243,1);
+text-shadow: 2px 2px 2px rgba(253, 22, 2, 0.5);
+
+}
+</style>
+<!-- links-->
+<style>
+a{
+	color:inherit !important;
+ 	text-decoration:underline !important;
+}
+
+a:hover{
+	color:rgba(0, 85, 254,0.7) !important;
+	}
+</style>
+
+<!-- Fade in double text for Bio -->
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4vw);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5vw);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .text1, .text2 {
+    opacity: 0; /* Start hidden */
+  }
+  .text2 {
+    opacity: 0; /* Start hidden */
+    width: 100vw;   /*Ensure the width is 100% of the parent container */
+    max-width: 100vw;  /*Limit the width to the viewport */
+    display: flex;  /*Enable flexbox */
+    align-items: center;  /* Align items vertically */
+}
+
+  .fade-in {
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+  .slide-in {
+    animation: slideIn 1s ease-in-out forwards;
+  }
+</style>
+
+
+<!-- Background desing -->
+
+
+<!-- Circular photo frame -->
+<style>
+    .circular-frame {
+      width: 20vw; /* Set the width of the circle */
+      height: 300vw; /* Make it a square */
+      border-radius: 50%; /* Turns the square into a circle */
+      overflow: hidden; /* Ensures the image stays within the circle */
+      border: 1vw solid #0077b5; /* Adds a colored border */
+      display: flex; /* Centers the image */
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(250, 250, 250, 0.2); /* Optional: Adds a subtle shadow */
+    }
+
+    .circular-frame img {
+      width: 100%; /* Makes the image fill the circular container */
+      height: auto; /* Maintains the image's aspect ratio */
+    }
+  </style>
+  <style>
+    /* Full-page container with background image */
+    .background {
+      position: relative;
+      height: 12vh%; /* Full viewport height */
+      min-height: 100%;
+      
+
+
+      background: url('assets/Glam_Schreier.jpg')  no-repeat center center/cover;
+    }
+
+    /* Semi-transparent overlay for opacity effect */
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      height: 100%;
+      
+      background-color: rgba(255, 255, 255, .8); 
+    }
+
+    /* Content over the background */
+    .content {
+      position: relative;
+      z-index: 2; /* Ensures content is above the overlay */
+      text-align: left;
+      /*color: black;*/
+      /*font-size: 1.5rem;*/
+      /*padding: 20px;*/
+      /*margin-top: 20%;*/
+    }
+  </style>
+<style>
+  .container {
+    display: flex;            /* Use Flexbox to align image and text side by side */
+    justify-content: center;  /* Center the content horizontally */
+    align-items: flex-start; /* Align items to the top */
+    gap: 3vw;                /* Add space between the image and abstract */
+    margin: 1vw 2vw;         /* Top and bottom margin of 1vw, horizontally centered */
+    width: 90%;              /* Set container width to 90% of the page */
+    max-width: 90%;
+    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+  }
+
+  .image-container {
+    position: relative;
+    width: 40vw;             /* Set image size */
+    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+  }
+
+  .image-container img {
+    width: 100%;              /* Image takes up full container width */
+    height: auto;
+    border-radius: .5vw;      /* Optional: Rounded corners for the image */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for scaling and shading */
+  }
+
+  .image-container:hover img {
+    transform: scale(1.00);   /* Scales up the image on hover */
+    filter: brightness(25%);  /* Apply shading effect */
+  }
+
+  .image-container .text {
+    position: absolute;
+    top: 50%;                 /* Center vertically */
+    left: 50%;                /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position relative to center */
+    color: white;
+    font-weight: bold;
+    font-size: calc(2.3vw);   /* Dynamically scale font size */
+    text-align: center;       /* Center-align text */
+    opacity: 0;               /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in effect */
+    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+    line-height: 1.3;         /* Adjust line height for better spacing */
+    padding: 0 1vw;           /* Add some padding to prevent text overflow */
+    word-wrap: break-word;    /* Prevent long text from breaking layout */
+  }
+
+  .image-container:hover .text {
+    opacity: 1;               /* Make the text appear on hover */
+    transform: translate(-50%, -48%); /* Add subtle vertical shift on hover for effect */
+  }
+
+  .abstract {
+    font-size: 1.3rem;        /* Text size for the abstract */
+    justify-content: left;    /* Align text to the left */
+    line-height: 1.5;         /* Line spacing */
+    max-width: 50vw;          /* Optional: Limit width of the abstract */
+  }
+
+  .abstract p {
+    margin: 2,5vw;
+  }
+</style>
+
+
+  <style>
+    /* Added smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Flexbox for side-by-side layout */
+    .publication-entry {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .publication-entry img {
+      width: 30vw; /* Adjust the size of the image */
+      height: auto;
+      margin-right: 2vw;
+      border-radius: 1vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    transition: box-shadow .3s ease, transform .5s ease;
+    }
+    .publication-entry a:hover img { /* Scaling when hovering on tile */
+    transform: scale(1.025);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+    .publication-entry a:hover {
+      text-decoration: underline;
+    }
+
+    /* Styling for navigation links */
+    .navigation-links {
+      margin-top: 10px;
+    }
+    .navigation-links a {
+      margin-right: 15px;
+      text-decoration: underline;
+      color: black; /* Link color *//* 73230 */
+    }
+    .navigation-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+
+<body>
+        
+ 	<div class="background">
+    <div class="background-overlay"></div>
+	<div class="content">
+
+
+      
+      <header>
+        <!-- <h1><span style="font-family: 'Arial, Helvetica, sans-serif'; ;">Davide Manca</span> -->
+
+      </header>
+      <main>
+      <section id="my_bio">
+
+      <div class="side-by-side">
+            <img src="assets/photo.JPG" alt="Your Photo">
+            <h1 class="text1"><span style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;font-size: 2em ;">Davide<br>Manca</span> </h1>
+            <div class="text2"><span style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;font-size: 1.5em ;">I'm a PhD student in the&nbsp;<a href="https://www.mathematik.uni-wuerzburg.de/mathematicallogic/" target="_blank"><u>Mathematical Logic Group</u></a> at JMU Würzburg, with a background in Mathematics. <p> My research area is proof theory, and in particular reverse mathematics. </span></div>
+      </div>
+        </section>
+
+
+<section id="publications">
+    <!-- <h1><a href="#top"></a>Publications and Reseach Experience</h1> -->
+    <p style="margin-left: 0vw; text-align: center;"> 
+      <span class="navigation-links">
+	
+	<a href="#contacts">Contacts</a>|
+        <a href="#interests">Research interests</a>|
+	<a href="#published">Publications</a>|  
+	<a href="#conferences">Conferences</a>|
+        <a href="#cv">CV</a>
+        
+        
+      </span>
+    </p>
+
+
+<h2 id="contacts" style="margin-left: 2.5vw; text-align: left;">Contacts</h2> 
+
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;"><strong>e-mail address:</strong> d[dot]manca[dot]math[at]gmail[dot]com</p>
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;"><strong>institutional e-mail address:</strong> davide.manca@uni-wuerzburg.de</p>
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;"><a href="https://www.mathematik.uni-wuerzburg.de/en/mathematicallogic/team/manca-davide/" target="_blank"><strong>personal webpage @JMU Würzburg</strong></a></p>
+
+<h2 id="interests" style="margin-left: 2.5vw; text-align: left;">Research interests</h2> 
+
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;">My main focus as a PhD student is the reverse mathematics of well orders and well quasi-orders. An important topic of research was the notion of better quasi-order, a strengthened form of well quasi-order which enjoys nicer closure properties for infinitary data types, such as infinite sequences and infinite labelled trees. 
+The systems of second order arithmetic between ATR<sub>0</sub> and &Pi;<sup>1</sup><sub>1</sub>-CA<sub>0</sub> are a natural environment in which to study the strength of these objects. In particular, ATR<sub>0</sub> is equivalent to many natural statements about well orders, and it is a lower bound to the strength of some of the most important results of well quasi-order and better quasi-order theory, such as Laver's or Kruskal's theorems - in the case of the latter, even a strict one.
+I have also worked on dilators: those are very regular transformation between ordinals, which can be coded nicely in second order arithmetic. This makes them a suitable way to formalize the semi-formal notion of ordinal notation system, which plays an important role in the branch of proof theory of ordinal analysis.</p>
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;">Here are some of the research problems that I want to work on in the future:</p>
+
+<ul><ul>
+	<li>Study the strength of better quasi-order variants of Kruskal's theorem for trees in reverse mathematics.</li>
+	<li>Explore suitable characterizations for the stronger systems of second order arithmetics &Pi;<sup>1</sup><sub>2</sub> comprehension, e.g. in terms of dilators. Study relativized versions of those principles, e.g. in terms of pseudo-&beta;<sub>2</sub>-model reflection.</li>
+	<li>Study better quasi-orders in the context of descriptive set theory and/or the strength of those results in reverse mathematics.</li>
+	<li>Study well and better quasi-orders in the context of Weirauch reducibility.</li>
+	<li>Work with the weaker systems of second order arithmetic, sub-ACA<sub>0</sub>.</li>
+	<li>Find funding to do some/all of the above.</li>
+</ul></ul>
+
+	
+<h2 id="published" style="margin-left: 2.5vw; text-align: left;">Publications</h2> 
+
+
+<h3 style="margin-left: 2.5vw; text-align: left; text-align: left;   font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+"><a href="https://academic.oup.com/logcom/article-abstract/34/6/1064/7043024" target="_blank" style="color: black;">
+<em><u>Normal functions and maximal order types</u></em></a></h3>
+
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;">(Anton Freund and Davide Manca, <em>Journal of Logic and Computation</em>, 2023)</p>
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;">Transformations of well partial orders induce functions on the ordinals, via the notion of maximal order type. In most examples from the literature, these functions are not normal, in marked contrast with the central role that normal functions play in ordinal analysis and related work from computability theory. The present paper aims to explain this phenomenon. In order to do so, we investigate a rich class of order transformations that are known as WPO-dilators. According to a first main result of this paper, WPO-dilators induce normal functions when they satisfy a rather restrictive condition, which we call strong normality. Moreover, the reverse implication holds as well, for reasonably well-behaved WPO-dilators. Strong normality also allows us to explain another phenomenon: by previous work of Freund, Rathjen and Weiermann, a uniform Kruskal theorem for WPO-dilators is as strong as
+Π<sup>1</sup><sub>1</sub>-comprehension, while the corresponding result for normal dilators on linear orders is equivalent to the much weaker principle of Π<sup>1</sup><sub>1</sub>-induction. As our second main result, we show that Π<sup>1</sup><sub>1</sub>-induction is equivalent to the uniform Kruskal theorem for WPO-dilators that are strongly normal.</p><br>
+</p>
+
+<h3 style="margin-left: 2.5vw; text-align: left; text-align: left;   font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+"><a href="https://www.cambridge.org/core/journals/journal-of-symbolic-logic/article/weak-well-orders-and-fraisses-conjecture/7291D17075059760907352D480A283EA" target="_blank" style="color:black;" >
+<em><u>Weak well orders and Fraïssé's conjecture</u></em></a></h3>
+
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;">(Anton Freund and Davide Manca, <em>Journal of Symbolic Logic</em>, 2023)</p>
+<p style="margin-left: 2.5vw; margin-right: 2.5vw; text-align: left;">The notion of countable well order admits an alternative definition in terms of embeddings between initial segments. We use the framework of reverse mathematics to investigate the logical strength of this definition and its connection with Fraïssé’s conjecture, which has been proved by Laver. We also fill a small gap in Shore’s proof that Fraïssé’s conjecture implies arithmetic transfinite recursion over RCA<sub>0</sub>, by giving a new proof of Σ<sup>0</sup><sub>2</sub>-induction.
+</p><br>
+</p>
+
+    <h3 id="submitted" style="margin-left: 2.5vw; text-align: left;">Submitted </h3>
+    <ul>
+    <ul>
+        <!-- <img src="assets/submitted.jpg" alt="Submitted Publication"> -->
+        <li>
+          <em>Some results on the reverse mathematics of finite better quasi orders</em>, Davide Manca. Submitted in Februrary 2024, currently under revision.
+      </li>
+    </ul>
+    </ul>
+
+    <h3 id="in-preparation" style="margin-left: 2.5vw; text-align: left;">In Preparation  </h3>
+    <ul>
+    <ul>
+      <li>
+        <!-- <img src="assets/in-preparation1.jpg" alt="Harvesting Energy"> -->
+        <div>
+          <em>Fraïssé’s conjecture, partial impredicativity and well-ordering principles, part II</em>, Anton Freund, Katarzyna Kowalik, and Davide Manca.
+        </div>
+      </li>
+    </ul>
+    </ul>
+
+</section>
+
+<section id="conferences">
+<h2  style="margin-left: 2.5vw; text-align: left;">Conferences [<a href="#top">top</a>] </h2>
+
+    <h3  style="margin-left: 2.5vw; text-align: left;">Talks  </h3>
+        <div>
+          <ul>
+	  <ul>
+            
+	      <li> <strong style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;">Better quasi-orders on labelled trees</strong>, (2025), <em>Weihrauch Complexity: Structuring the Realm of Non-Computability</em>, Dagstuhl, Germany. Invited.</li>
+		<div class="side-by-side2" style="text-align: center;">
+			<!-- Picture 1 -->
+			<div class="image-container">
+  			<img src="assets/dagstuhl_2.jpg" alt="image 1"style="width: auto; height: 25vw; display: inline-block; margin: 0 10px; border-radius: 10px;" />
+			<div class="text" style="text-align: center;"><em>Ruins of Dagstuhl castle</em></div>
+  			</div>
+			<!-- Picture 2 -->
+			<div class="image-container">
+  			<img src="assets/dagstuhl_1.jpg" alt="image 1"style="width: auto; height: 25vw; display: inline-block; margin: 0 10px; border-radius: 10px;" /><br>
+			<div class="text" style="text-align: center;"><em>Photo of Schloss Dagstuhl from the hill</em></div>
+  			</div>
+                 </div>
+	      <li> <strong style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;">&Delta;<sup>0</sup><sub>2</sub>-bqo's in reverse mathematics</strong>, (2024), <em>Logic Colloquium</em>, Gothenburg, Sweden.</li>
+              <li> <strong style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;">On the reverse mathematics of &Delta;<sup>0</sup><sub>2</sub>-bqo's</strong>, (2024), <em>Trends in proof Theory</em>, Vienna, Austria.</li>
+              <li> <strong style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;">On a weak notion of well order</strong> (2023), joint work with Anton Freund, <em>Logic Colloquium</em>, Milan, Italy.</li>
+		<div class="side-by-side2" style="text-align: center;">
+			<!-- Picture 1 -->
+			<div class="image-container">
+  			<img src="assets/milan_1.jpg" alt="image 1"style="width: auto; height: 25vw; display: inline-block; margin: 0 10px; border-radius: 10px;" />
+			<div class="text" style="text-align: center;"><em>My talk at Logic Colloquium 2023</em></div>
+  			</div>
+                 </div>
+              <li> <strong style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;">Hereditarily countable sets with urelements in a quasi order</strong> (2023), <em>Trends in Proof Theory</em>, Ghent, Belgium.</li>
+            
+	  </ul>
+          </ul>
+        </div>
+	
+	<h3  style="margin-left: 2.5vw; text-align: left;">Attended </h3>
+        <div>
+          <ul>
+	  <ul>
+           	<li><em>Summer School and Workshop on Proof Theory and its Applications</em> (2023), Barcelona, Spain.
+            	<li><em>Logic Colloquium</em> (2022), Reykjavik, Iceland.</li>
+	  </ul>
+          </ul>
+        </div>
+  
+</section>
+
+<section id="cv">
+<h2  style="margin-left: 2.5vw; text-align: left;">CV [<a href="#top">top</a>] </h2>
+
+	<p style="margin-left: 2.5vw; text-align: left;"><strong>Download:</strong> <a href="assets/Davide_Manca_CV.pdf" target="_blank"><em>Curriculum Vitae.pdf</em></a></p>
+
+	 <h3 id="teaching" style="margin-left: 2.5vw; text-align: left;">Teaching Experience </h3>
+	 <p style="margin-left: 2.5vw; text-align: left;">
+	   I was in charge of some of the exercise classes in prof. Freund's logic courses:
+	 </p>
+        <div>
+	
+          <ul>
+          <ul>
+	   <li>JMU Würzburg, Winter semester 2024-2025 (teaching duty shared with Katarzyna Kowalik).</li>
+           <li>TU Darmstadt, Summer semester 2022 (teaching duty shared with Patrick Uftring).</li>
+        </ul>
+        </ul>
+        </div>
+
+    <h3 id="education" style="margin-left: 2.5vw; text-align: left;">Education  </h3>
+    <ul>
+      <ul>
+      <li class="publication-entry">
+        <!-- <img src="assets/submitted.jpg" alt="Submitted Publication"> -->
+            <li><strong>PhD candidate in Mathematics</strong> at TU Darmstadt (GE) (2022-2023), JMU Würzburg (GE) (2023-2025). Thesis: <em>At the limits of predicativity: the reverse mathematics of ordering relations</em>. Submitted in February 2025. Supervisor: prof. dr. Anton Freund.</li>
+           <li><strong>MSc in Mathematics</strong> (cum laude) (2018-2021) at Università di Torino (IT). Thesis: <em>Results on the reverse mathematics of Fraïssé's conjecture</em>, Supervisors: prof. Alberto Marcone (Università di Udine), prof. Luca Motto Ros (Università di Torino).</li>
+          <li><strong>BSc in Mathematics</strong> (2013-2018) at Università degli Studi "Aldo Moro" di Bari (IT). Thesis: <em>Algebrizzazione della logica delle proposizioni</em>, Supervisor: prof. Margherita Barile.</li>
+      </li>
+    </ul>
+    </ul>
+
+    
+
+    <h3 id="skills" style="margin-left: 2.5vw; text-align: left;">Technical Skills  </h3>
+        <div>
+          <ul>
+          <ul>
+            <li>  <strong style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;">Languages</strong>: English (L2), German (L2), Italian (L1)</li>
+            <li>  <strong style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;">Coding Languages</strong>: some familiarity with Python, C, MATLAB, HTML</li>
+          </ul>
+          </ul>
+        </div>
+
+  </section>
+
+<h3 id="aknowldgements" style="margin-left: 2.5vw; text-align: left;"><em>Aknowledgements</em></h3>
+
+<p  style="margin-left: 2.5vw; text-align: left;"> <em>I am very grateful to my friend Sergio Picella for the source code that I used to make this website! You can find his personal site below.</em></p>
+ 
+ <div class="my_sergio" style="text-align: center;">
+	<div class="sergio-container">
+	<a href="https://www.sergiopicella.com" target="_blank">
+      		<img src="assets/73230.jpg" alt="Sergio">
+      		<div class="text" style="text-align: center;"><em>SERGIO!!!</em></div>
+    	</a>
+	</div>
+ </div>
+
+<p>
+  <footer style="background-color:rgba(0, 85, 254,0.7)">
+    <p>© 2025 Davide Manca</p>
+  </footer>
+      <script src="js/script.js"></script>
+      </div>
+  </div>
+    <script>
+    window.addEventListener('load', function () {
+      const animatedText = document.querySelector('.animated-text');
+      animatedText.classList.add('fade-in');
+    });
+  </script>
+  <script>
+  window.addEventListener('load', function () {
+    // Select both text elements
+    const text1 = document.querySelector('.text1');
+    const text2 = document.querySelector('.text2');
+
+    // Add the first animation
+    text1.classList.add('fade-in');
+
+    // Add the second animation after the first one completes
+    setTimeout(() => {
+      text2.classList.add('slide-in');
+    }, 2000); // Delay matches the duration of the first animation (2s)
+  });
+</script>
+</body>
+</html>
