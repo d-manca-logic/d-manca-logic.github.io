@@ -237,6 +237,23 @@ div, img, p {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  /* Aggiungi qui le regole per dispositivi mobili */
+  .side-by-side img {
+    width: 50vw; /* Per esempio, ridurre la dimensione dell'immagine sui dispositivi mobili */
+  }
+
+.side-by-side2 img {
+    width: 50vw; /* Per esempio, ridurre la dimensione dell'immagine sui dispositivi mobili */
+  }
+  
+  .container {
+    flex-direction: column; /* Cambiare il layout per una visualizzazione a colonna */
+  }
+}
+
+
 /*@media (max-width: 480px) {
   .container {
     padding: 0.5rem;
