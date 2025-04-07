@@ -1,49 +1,48 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B65PS8QGN7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B65PS8QGN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-B65PS8QGN7');
+  </script>
 
-  gtag('config', 'G-B65PS8QGN7');
-</script>
   <!-- Add keyword for search engine -->
   <meta name="description" content="Davide Manca's personal website and academic CV">
-<meta name="keywords" content=" research, mathematics, logic, reverse mathematics, well quasi-order, better quasi-order, ordinal analysis">
-<meta name="author" content="Davide Manca">
-<!-- This for mobile friendly view -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Download Git, Linkedind and mail logo -->
+  <meta name="keywords" content="research, mathematics, logic, reverse mathematics, well quasi-order, better quasi-order, ordinal analysis">
+  <meta name="author" content="Davide Manca">
+
+  <!-- This for mobile friendly view -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Download Git, LinkedIn, and mail logo -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
   <meta charset="UTF-8">
   <title>Davide Manca</title>
   <link rel="stylesheet" href="css/styles.css">
 
-</head>
   <!-- Side by side rounded image for bio -->
   <style>
     .side-by-side {
-      display: flex; /* Align items side by side */
-      gap: 3vw; /* Add space between image and text */
-      align-items: center; /* Vertically align image and text */
+      display: flex; 
+      gap: 3vw; 
+      align-items: center; 
       justify-content: center;
       text-align: center;
-
     }
-
     .side-by-side img {
-      width: 20vw; /* Set the size of the circular image */
-      height: 20vw; /* Make it a square */
-      border-radius: 100%; /* Make the image circular */
-      object-fit: cover; /* Ensures the image fills the circle nicely */
-      border: .3vw solid rgba(255, 246, 241); /* Optional: Add a border around the circle */
+      width: 20vw; 
+      height: 20vw; 
+      border-radius: 100%; 
+      object-fit: cover;
+      border: .3vw solid rgba(255, 246, 241); 
       box-shadow: 2px 2px 2px rgba(253, 22, 2, 0.5);
     }
 
-    .side-by-side2 {
+	.side-by-side2 {
       display: flex; /* Align items side by side */
       gap: 0vw; /* Add space between image and text */
       align-items: center; /* Vertically align image and text */
@@ -51,197 +50,164 @@
       text-align: center;
 
     }	
-
-
   </style>
-	
 
-
-<!--A Sergio of one's own -->
-
-<style>
-	.my_sergio{ 
-      		display: flex; /* Align items side by side */
-      		gap: 3vw; /* Add space between image and text */
-      		align-items: center; /* Vertically align image and text */
-      		justify-content: center;
-      		text-align: center;
-    		}      		
-
-	
- 	.sergio-container {
-    				position: relative;
-    				width: 10vw;             /* Set image size */
-    				font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
- 			 }
-
-  .sergio-container img {
-    			width: 7vw; /* Set the size of the circular image */
-      			height: 7vw; /* Make it a square */
-      			border-radius: 100%; /* Make the image circular */
-      			object-fit: cover; /* Ensures the image fills the circle nicely */
-      			border: .1vw solid rgb(0, 0, 0); /* Optional: Add a border around the circle */
-    			}
-
-  .sergio-container:hover img {
-    transform: scale(1.20);   /* Scales up the image on hover */
-    filter: brightness(25%);  /* Apply shading effect */
-  }
-
-  .sergio-container .text {
-    position: absolute;
-    top: 50%;                 /* Center vertically */
-    left: 50%;                /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position relative to center */
-    color: white;
-    font-weight: bold;
-    font-size: calc(1.8vw);   /* font size */
-    text-align: center;       /* Center-align text */
-    opacity: 0;               /* Initially hidden */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in effect */
-    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
-    line-height: 1.3;         /* Adjust line height for better spacing */
-    padding: 0 1vw;           /* Add some padding to prevent text overflow */
-    word-wrap: break-word;    /* Prevent long text from breaking layout */
-  }
-
-  .sergio-container:hover .text {
-    opacity: 1;               /* Make the text appear on hover */
-    transform: translate(-50%, -48%); /* Add subtle vertical shift on hover for effect */
-  }
-		
-     
-</style>
-
-<!-- Fade in single text -->
-<style>
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-4vw);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animated-text {
-    opacity: 0; /* Ensure the element starts hidden */
-  }
-
-  .fade-in {
-    animation: fadeIn 1.5s ease-in-out;
-    animation-fill-mode: forwards; /* Retains the final state after animation */
-  }
-</style>
-
-
-<!-- boxino bio-->
-<style>
-
-#my_bio{
-
-background-color: rgba(0, 85, 254, 0.7);
-padding: 20px;
-border-radius:10px;
-color: rgba(255,248,243,1);
-text-shadow: 2px 2px 2px rgba(253, 22, 2, 0.5);
-
-}
-</style>
-<!-- links-->
-<style>
-a{
-	color:inherit !important;
- 	text-decoration:underline !important;
-}
-
-a:hover{
-	color:rgba(0, 85, 254,0.7) !important;
-	}
-</style>
-
-<!-- Fade in double text for Bio -->
-<style>
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-4vw);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-5vw);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .text1, .text2 {
-    opacity: 0; /* Start hidden */
-  }
-  .text2 {
-    opacity: 0; /* Start hidden */
-    width: 100vw;   /*Ensure the width is 100% of the parent container */
-    max-width: 100vw;  /*Limit the width to the viewport */
-    display: flex;  /*Enable flexbox */
-    align-items: center;  /* Align items vertically */
-}
-
-  .fade-in {
-    animation: fadeIn 2s ease-in-out forwards;
-  }
-
-  .slide-in {
-    animation: slideIn 1s ease-in-out forwards;
-  }
-</style>
-
-
-<!-- Background desing -->
-
-
-<!-- Circular photo frame -->
-<style>
-    .circular-frame {
-      width: 20vw; /* Set the width of the circle */
-      height: 300vw; /* Make it a square */
-      border-radius: 50%; /* Turns the square into a circle */
-      overflow: hidden; /* Ensures the image stays within the circle */
-      border: 1vw solid #0077b5; /* Adds a colored border */
-      display: flex; /* Centers the image */
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 6px rgba(250, 250, 250, 0.2); /* Optional: Adds a subtle shadow */
-    }
-
-    .circular-frame img {
-      width: 100%; /* Makes the image fill the circular container */
-      height: auto; /* Maintains the image's aspect ratio */
-    }
-  </style>
+  <!-- A Sergio of one's own -->
   <style>
-    /* Full-page container with background image */
+    .my_sergio{ 
+      display: flex; 
+      gap: 3vw; 
+      align-items: center; 
+      justify-content: center;
+      text-align: center;
+    }       
+    .sergio-container {
+      position: relative;
+      width: 10vw;
+    }
+    .sergio-container img {
+      width: 7vw;
+      height: 7vw;
+      border-radius: 100%; 
+      object-fit: cover;
+      border: .1vw solid rgb(0, 0, 0); 
+    }
+    .sergio-container:hover img {
+      transform: scale(1.20);   
+      filter: brightness(25%);  
+    }
+    .sergio-container .text {
+      position: absolute;
+      top: 50%;                 
+      left: 50%;                
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      font-size: calc(1.8vw);   
+      text-align: center;
+      opacity: 0;               
+      transition: opacity 0.3s ease, transform 0.3s ease; 
+      font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+      line-height: 1.3;
+      padding: 0 1vw;
+      word-wrap: break-word;    
+    }
+    .sergio-container:hover .text {
+      opacity: 1;               
+      transform: translate(-50%, -48%);
+    }
+  </style>
+
+  <!-- Fade in single text -->
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-4vw);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animated-text {
+      opacity: 0;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+  </style>
+
+  <!-- boxino bio -->
+  <style>
+    #my_bio {
+      background-color: rgba(0, 85, 254, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      color: rgba(255, 248, 243, 1);
+      text-shadow: 2px 2px 2px rgba(253, 22, 2, 0.5);
+    }
+  </style>
+
+  <!-- links -->
+  <style>
+    a {
+      color: inherit !important;
+      text-decoration: underline !important;
+    }
+    a:hover {
+      color: rgba(0, 85, 254, 0.7) !important;
+    }
+  </style>
+
+  <!-- boxino generico per contenuti -->
+  <style>
+    .boxino {
+      background-color: rgba(255, 255, 255, .9);
+      padding: 0px;
+      width: auto;
+      display: inline-block;
+      border-radius: 10px;
+      text-align: inherit !important;
+    }
+  </style>
+
+  <!-- Fade in double text for Bio -->
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-4vw);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-5vw);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .text1, .text2 {
+      opacity: 0;
+    }
+    .text2 {
+      opacity: 0;
+      width: 100vw;
+      max-width: 100vw;
+      display: flex;
+      align-items: center;
+    }
+
+    .fade-in {
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    .slide-in {
+      animation: slideIn 1s ease-in-out forwards;
+    }
+  </style>
+
+  <!-- Background design -->
+  <style>
     .background {
       position: relative;
-      height: 12vh%; /* Full viewport height */
+      height: 12vh%;
       min-height: 100%;
-      
-
-
-      background: url('assets/Glam_schreier.jpg')  no-repeat center center/cover;
+      background: url('assets/Glam_schreier.jpg') no-repeat center center/cover;
     }
 
-    /* Semi-transparent overlay for opacity effect */
     .background-overlay {
       position: absolute;
       top: 0;
@@ -249,149 +215,144 @@ a:hover{
       width: 100%;
       min-height: 100%;
       height: 100%;
-      
       background-color: rgba(255, 255, 255, .9); 
     }
 
-    /* Content over the background */
     .content {
       position: relative;
-      z-index: 2; /* Ensures content is above the overlay */
-      text-align: left;
-      /*color: black;*/
-      /*font-size: 1.5rem;*/
-      /*padding: 20px;*/
-      /*margin-top: 20%;*/
+      z-index: 2;
     }
   </style>
-<style>
-  .container {
-    display: flex;            /* Use Flexbox to align image and text side by side */
-    justify-content: center;  /* Center the content horizontally */
-    align-items: flex-start; /* Align items to the top */
-    gap: 3vw;                /* Add space between the image and abstract */
-    margin: 1vw 2vw;         /* Top and bottom margin of 1vw, horizontally centered */
-    width: 90%;              /* Set container width to 90% of the page */
-    max-width: 90%;
-    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
-  }
 
-  .image-container {
-    position: relative;
-    width: 40vw;             /* Set image size */
-    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
-  }
-
-  .image-container img {
-    width: 100%;              /* Image takes up full container width */
-    height: auto;
-    border-radius: .5vw;      /* Optional: Rounded corners for the image */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for scaling and shading */
-  }
-
-  .image-container:hover img {
-    transform: scale(1.00);   /* Scales up the image on hover */
-    filter: brightness(25%);  /* Apply shading effect */
-  }
-
-  .image-container .text {
-    position: absolute;
-    top: 50%;                 /* Center vertically */
-    left: 50%;                /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position relative to center */
-    color: white;
-    font-weight: bold;
-    font-size: calc(2.3vw);   /* Dynamically scale font size */
-    text-align: center;       /* Center-align text */
-    opacity: 0;               /* Initially hidden */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade-in effect */
-    font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
-    line-height: 1.3;         /* Adjust line height for better spacing */
-    padding: 0 1vw;           /* Add some padding to prevent text overflow */
-    word-wrap: break-word;    /* Prevent long text from breaking layout */
-  }
-
-  .image-container:hover .text {
-    opacity: 1;               /* Make the text appear on hover */
-    transform: translate(-50%, -48%); /* Add subtle vertical shift on hover for effect */
-  }
-
-  .abstract {
-    font-size: 1.3rem;        /* Text size for the abstract */
-    justify-content: left;    /* Align text to the left */
-    line-height: 1.5;         /* Line spacing */
-    max-width: 50vw;          /* Optional: Limit width of the abstract */
-  }
-
-  .abstract p {
-    margin: 2,5vw;
-  }
-</style>
-
-<!-- list style-->
-
-	<style>
-		li{
-			margin-right: 10vw;
-		}
-	</style>
-
-<!-- paragraph style-->
-	<style>
-		p{
-			margin-left:2.5vw;
-			margin-right:5vw;
-			text-align: left;
-		}
-	
   <style>
-    /* Added smooth scrolling */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3vw;
+      margin: 1vw 2vw;
+      width: 90%;
+      max-width: 90%;
+      font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+    }
+
+    .image-container {
+      position: relative;
+      width: 40vw;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: .5vw;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.00);
+      filter: brightness(25%);
+    }
+
+    .image-container .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      font-size: calc(2.3vw);   
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;
+      line-height: 1.3;
+      padding: 0 1vw;
+      word-wrap: break-word;
+    }
+
+    .image-container:hover .text {
+      opacity: 1;
+      transform: translate(-50%, -48%);
+    }
+
+    .abstract {
+      font-size: 1.3rem;
+      justify-content: left;
+      line-height: 1.5;
+      max-width: 50vw;
+    }
+
+    .abstract p {
+      margin: 2,5vw;
+    }
+  </style>
+
+  <!-- List style -->
+  <style>
+    li {
+      margin-right: 10vw;
+    }
+  </style>
+
+  <!-- Paragraph style -->
+  <style>
+    p {
+      margin-left: 2.5vw;
+      margin-right: 5vw;
+      text-align: justify;
+    }
+  </style>
+
+  <!-- Added smooth scrolling -->
+  <style>
     html {
       scroll-behavior: smooth;
     }
 
-    /* Flexbox for side-by-side layout */
     .publication-entry {
       display: flex;
       align-items: flex-start;
       margin-bottom: 20px;
     }
+
     .publication-entry img {
-      width: 30vw; /* Adjust the size of the image */
+      width: 30vw;
       height: auto;
       margin-right: 2vw;
       border-radius: 1vw;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-    transition: box-shadow .3s ease, transform .5s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+      transition: box-shadow .3s ease, transform .5s ease;
     }
-    .publication-entry a:hover img { /* Scaling when hovering on tile */
-    transform: scale(1.025);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  }
+
+    .publication-entry a:hover img {
+      transform: scale(1.025);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
     .publication-entry a:hover {
       text-decoration: underline;
     }
 
-    /* Styling for navigation links */
     .navigation-links {
       margin-top: 10px;
     }
+
     .navigation-links a {
       margin-right: 15px;
       text-decoration: underline;
-      color: black; /* Link color *//* 73230 */
+      color: black;
     }
+
     .navigation-links a:hover {
       text-decoration: underline;
     }
   </style>
-
 </head>
 
 <body>
         
  	<div class="background">
-    <div class="background-overlay"></div>
+  	<div class="background-overlay"></div>
 	<div class="content">
 
 
@@ -406,13 +367,15 @@ a:hover{
       <div class="side-by-side">
             <img src="assets/photo.jpg" alt="Your Photo">
             <h1 class="text1"><span style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif;font-size: 2em ;">Davide<br>Manca</span> </h1>
-            <div class="text2"><span style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif; font-size: 1.5em ; right-margin:5vw;">I'm a PhD student in the&nbsp;<a href="https://www.mathematik.uni-wuerzburg.de/mathematicallogic/" target="_blank"><u>Mathematical Logic Group</u></a> at JMU Würzburg, with a background in Mathematics. <p> My research area is proof theory, and in particular reverse mathematics. </span></div>
+            <div class="text2"><span style="  font-family: 'Optima', 'Segoe UI', 'Candara', 'Arial', sans-serif; font-size: 1.5em ; right-margin:5vw;">I'm a PhD student in the&nbsp;<a href="https://www.mathematik.uni-wuerzburg.de/mathematicallogic/" target="_blank"><u>Mathematical Logic Group</u></a> at JMU Würzburg, with a background in Mathematics. <br> My research area is proof theory, and in particular reverse mathematics. </span></div>
       </div>
         </section>
 
 
 <section id="publications">
     <!-- <h1><a href="#top"></a>Publications and Reseach Experience</h1> -->
+
+    
     <p style="margin-left: 0vw; text-align: center;"> 
       <span class="navigation-links">
 	
@@ -425,17 +388,20 @@ a:hover{
         
       </span>
     </p>
-
+   
 
 <h2 id="contacts" style="margin-left: 2.5vw; text-align: left;">Contacts</h2> 
+
 
 <p><strong>e-mail address:</strong> d[dot]manca[dot]math[at]gmail[dot]com</p>
 <p><strong>institutional e-mail address:</strong> davide.manca@uni-wuerzburg.de</p>
 <p><a href="https://www.mathematik.uni-wuerzburg.de/en/mathematicallogic/team/manca-davide/" target="_blank"><strong>personal webpage @JMU Würzburg</strong></a></p>
 
+
+
 <h2 id="interests" style="margin-left: 2.5vw; text-align: left;">Research interests</h2> 
 
-<p>My main focus as a PhD student is the reverse mathematics of well orders and well quasi-orders. An important topic of research was the notion of better quasi-order, a strengthened form of well quasi-order which enjoys nicer closure properties for infinitary data types, such as infinite sequences and infinite labelled trees. 
+<p>My main focus as a PhD student is the reverse mathematics of well orders and well quasi-orders. An important research topic is the notion of better quasi-order, a strengthened form of well quasi-order which enjoys nicer closure properties for infinitary data types, such as infinite sequences and infinite labelled trees. 
 The systems of second order arithmetic between ATR<sub>0</sub> and &Pi;<sup>1</sup><sub>1</sub>-CA<sub>0</sub> are a natural environment in which to study the strength of these objects. In particular, ATR<sub>0</sub> is equivalent to many natural statements about well orders, and it is a lower bound to the strength of some of the most important results of well quasi-order and better quasi-order theory, such as Laver's or Kruskal's theorems - in the case of the latter, even a strict one.
 I have also worked on dilators: those are very regular transformation between ordinals, which can be coded nicely in second order arithmetic. This makes them a suitable way to formalize the semi-formal notion of ordinal notation system, which plays an important role in the branch of proof theory of ordinal analysis.</p>
 <p>Here are some of the research problems that I want to work on in the future:</p>
