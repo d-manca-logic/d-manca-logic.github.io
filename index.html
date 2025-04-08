@@ -42,6 +42,7 @@
       box-shadow: 2px 2px 2px rgba(253, 22, 2, 0.5);
     }
 
+
 	.side-by-side2 {
       display: flex; /* Align items side by side */
       gap: 0vw; /* Add space between image and text */
@@ -50,7 +51,48 @@
       text-align: center;
 
     }	
-  </style>
+
+<!-- Opzioni mobile -->
+  @media (max-width: 768px) {
+    .side-by-side {
+      gap: 5vw; /* Riduce lo spazio tra gli elementi su schermi più piccoli */
+      flex-direction: column; /* Cambia la disposizione in colonna */
+      align-items: flex-start; /* Allinea gli elementi a sinistra */
+    }
+
+    .side-by-side img {
+      width: 30vw; /* Riduce la dimensione dell'immagine su dispositivi mobili */
+      height: 30vw;
+      order: 1; /* Posiziona l'immagine in alto */
+    }
+
+    .text1 {
+      font-size: 1.8em;
+      order: 2; /* Posiziona il nome sotto l'immagine */
+    }
+
+    .text2 {
+      font-size: 1.2em; /* Riduce la dimensione del testo su dispositivi mobili */
+      margin-right: 0; /* Rimuove il margine destro che era presente in desktop */
+      order: 3; /* Posiziona la bio sotto il nome */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .side-by-side img {
+      width: 50vw; /* Ulteriore riduzione della dimensione dell'immagine su schermi molto piccoli */
+      height: 50vw;
+    }
+
+    .text1 {
+      font-size: 1.5em;
+    }
+
+    .text2 {
+      font-size: 1.1em; /* Ulteriore riduzione del testo */
+    }
+  }
+</style>
 
   <!-- A Sergio of one's own -->
   <style>
